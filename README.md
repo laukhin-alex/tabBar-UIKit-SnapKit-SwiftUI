@@ -29,4 +29,4 @@ This project demonstrates the use of modern MVVM+C architecture with a tab bar b
 
 If you have any questions or suggestions, feel free to contact me:
 -	Email: alex.laukhin.pe@gmail.com
--	LinkedIn: [Alexander Laukhin](www.linkedin.com/in/alexander-laukhin)
+-	LinkedIn: [Alexander Laukhin](https://www.linkedin.com/in/alexander-laukhin)
