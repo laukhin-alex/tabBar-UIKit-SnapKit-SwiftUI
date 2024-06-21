@@ -48,6 +48,7 @@
 		1FD369502A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3694F2A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift */; };
 		1FD369522A2F9B07005C67B7 /* ComicsLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD369512A2F9B07005C67B7 /* ComicsLogicController.swift */; };
 		1FD369542A2F9D0F005C67B7 /* networkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD369532A2F9D0F005C67B7 /* networkLayer.swift */; };
+		4F4F46642C2561640099B8A5 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F46632C2561640099B8A5 /* LoggerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		1FD3694F2A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsLogicControllerProtocol.swift; sourceTree = "<group>"; };
 		1FD369512A2F9B07005C67B7 /* ComicsLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsLogicController.swift; sourceTree = "<group>"; };
 		1FD369532A2F9D0F005C67B7 /* networkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkLayer.swift; sourceTree = "<group>"; };
+		4F4F46632C2561640099B8A5 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				1FCE9A932A166F4700053975 /* ViewExtension.swift */,
 				1F93EEC72A24D00B0024388D /* Collection+indecis.swift */,
 				1F93EEC92A24DAAC0024388D /* Model+Identifable.swift */,
+				4F4F46632C2561640099B8A5 /* LoggerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -347,7 +350,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					1F68D0E62A0E73F2009AE837 = {
 						CreatedOnToolsVersion = 14.3;
@@ -407,6 +410,7 @@
 				1F93EEC32A2257A10024388D /* MarvelComicsViewModel.swift in Sources */,
 				1FD3694E2A2F97F5005C67B7 /* NetworkControllerProtocol.swift in Sources */,
 				1FD3694C2A2F865D005C67B7 /* EndPoint.swift in Sources */,
+				4F4F46642C2561640099B8A5 /* LoggerExtension.swift in Sources */,
 				1F6FB3062A1E6622005C2C08 /* NavigationTextView.swift in Sources */,
 				1F1C58BF2A278C0D0011CA3C /* IdentifiableURL.swift in Sources */,
 				1FD369522A2F9B07005C67B7 /* ComicsLogicController.swift in Sources */,
@@ -483,6 +487,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -543,6 +548,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

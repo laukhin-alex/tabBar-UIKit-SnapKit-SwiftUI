@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import OSLog
 
 @MainActor
 class MarvelComicsViewModel: ObservableObject {
@@ -44,9 +45,9 @@ class MarvelComicsViewModel: ObservableObject {
                     let totalComics = response.data?.total // MARK: total number of comics from API
                     let count = response.data?.count // MARK: The total number of results returned by this call.,
                     self?.total = totalComics ?? 0 // MARK: total number of comics from API
-                    print(totalComics ?? "")
-                    print(count ?? "")
-                    print(self?.comics.count.description ?? "")
+                    Logger.viewCycle.log("\(totalComics ?? 0)")
+                    Logger.viewCycle.log("\(count ?? 0)")
+                    Logger.viewCycle.log("\(self?.comics.count.description ?? "")")
                     self?.comics.append(contentsOf: response.data?.results ?? [Comic(id: nil,
                                                                                      title: nil,
                                                                                      pageCount: nil,
@@ -60,8 +61,8 @@ class MarvelComicsViewModel: ObservableObject {
                     let error = ApiErrorForAlert.ApiStatusError(rawValue: response.status ?? "") ?? .unknown
                     self?.error = ApiErrorForAlert(message: error.description)
                 }
-                print(response.code ?? "")
-                print(response.status ?? "")
+                Logger.viewCycle.log("\(response.code ?? 0)")
+                Logger.viewCycle.log("\(response.status ?? "")")
             })
     }
 }

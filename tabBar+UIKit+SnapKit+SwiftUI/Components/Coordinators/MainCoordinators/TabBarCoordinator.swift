@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 import SnapKit
+import OSLog
 
 class TabBarCoordinator: Coordinator {
     var viewController: MainViewController?
@@ -48,7 +49,7 @@ class TabBarCoordinator: Coordinator {
 
     // MARK: - start func for the tabbar coordinator
     func start() {
-        print("tab coordinator")
+        Logger.viewCycle.log("tab coordinator")
         // MARK: - choosing a tab
         customTabBar.onTabSelected = { [weak self] index in
             self?.tabTapped((self?.customTabBar.buttons[index]) ?? UIButton())
@@ -67,7 +68,7 @@ class TabBarCoordinator: Coordinator {
             let isSelected = (button == sender)
             button.setSelected(isSelected)
         }
-        print(selectedItem)
+        Logger.viewCycle.info("\(String(describing: selectedItem))")
         coordinators[selectedItem]?.start()
     }
 }

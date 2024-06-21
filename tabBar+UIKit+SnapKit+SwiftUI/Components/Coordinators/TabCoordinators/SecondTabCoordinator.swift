@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import OSLog
 
 class SecondTabCoordinator: Coordinator {
     var viewController: MainViewController?
@@ -16,7 +17,7 @@ class SecondTabCoordinator: Coordinator {
         let rootView = AnyView(RegularTextFields())
         let hostingController = UIHostingController(rootView: rootView)
         switchToController(hostingController)
-        print("2 coordinator")
+        Logger.viewCycle.log("2 coordinator")
     }
 
     private func switchToController(_ controller: UIHostingController<AnyView>) {

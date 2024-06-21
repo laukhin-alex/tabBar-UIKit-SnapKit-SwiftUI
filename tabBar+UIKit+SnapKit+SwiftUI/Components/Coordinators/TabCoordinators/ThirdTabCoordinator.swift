@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import OSLog
 
 class ThirdTabCoordinator: Coordinator {
     var navigationController: UINavigationController?
@@ -31,7 +32,7 @@ class ThirdTabCoordinator: Coordinator {
             switchToController(navigationController ?? UINavigationController())
             navigationController?.setViewControllers([hostingController], animated: true) // MARK: - this is method from the UINavigationController. There is no back button
 //            navigationController?.pushViewController(hostingController, animated: true) // MARK: - this is method from the UINavigationController. There is back button
-            print("3 back to home coordinator")
+            Logger.viewCycle.log("3 back to home coordinator")
         } else {
             let rootView = AnyView(NavigationTextView(onSubmit: { inputText in
                 // MARK: counter and text
@@ -47,7 +48,7 @@ class ThirdTabCoordinator: Coordinator {
             switchToController(navigationController ?? UINavigationController())
             navigationController?.setViewControllers([hostingController], animated: true)
 //            navigationController?.pushViewController(hostingController, animated: true)
-            print("3 count \(counter + 1) coordinator")
+            Logger.viewCycle.info("3 count \(self.counter + 1) coordinator")
         }
     }
 

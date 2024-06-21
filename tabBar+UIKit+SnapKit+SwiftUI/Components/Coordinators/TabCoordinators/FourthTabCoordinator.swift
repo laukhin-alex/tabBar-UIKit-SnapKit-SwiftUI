@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import OSLog
 
 class FourthTabCoordinator: Coordinator {
     var navigationController: UINavigationController?
@@ -24,7 +25,7 @@ class FourthTabCoordinator: Coordinator {
             switchToController(navigationController ?? UINavigationController())
             navigationController?.setViewControllers([hostingController], animated: true) // MARK: - this is method from the UINavigationController. There is no back button
 //            navigationController?.pushViewController(hostingController, animated: true) // MARK: - this is method from the UINavigationController. There is back button
-            print("4 coordinator")
+        Logger.viewCycle.log("4 coordinator")
     }
 
     // MARK: - as we use in this tab navigation, this method is a little different from other coordinators: UINavigationController instead of UIViewController on the entrance

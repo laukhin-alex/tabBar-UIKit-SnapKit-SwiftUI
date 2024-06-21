@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OSLog
 
 class MainCoordinator: Coordinator {
     var navigationController: UINavigationController?
@@ -21,7 +22,7 @@ class MainCoordinator: Coordinator {
     
     // MARK: - main start func
     func start() {
-        print("main coordinator")
+        Logger.viewCycle.log("main coordinator")
         let viewModel = MainViewModel(tabBarCoordinator: tabCoordinator ?? TabBarCoordinator())
         let viewController: UIViewController = MainViewController(viewModel: viewModel)
         viewModel.coordinator = self

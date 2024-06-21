@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import OSLog
 
 class FirstTabCoordinator: Coordinator {
     var viewController: MainViewController?
@@ -17,7 +18,7 @@ class FirstTabCoordinator: Coordinator {
         let rootView = AnyView(RegularButtons())
         let hostingController = UIHostingController(rootView: rootView)
         switchToController(hostingController)
-        print("1 coordinator")
+        Logger.viewCycle.log("1 coordinator")
     }
 
     // MARK: - before injection of the Coordinator patter this func was in the mainViewController
