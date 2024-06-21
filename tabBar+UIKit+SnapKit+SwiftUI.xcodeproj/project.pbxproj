@@ -47,7 +47,6 @@
 		1FD3694E2A2F97F5005C67B7 /* NetworkControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3694D2A2F97F5005C67B7 /* NetworkControllerProtocol.swift */; };
 		1FD369502A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3694F2A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift */; };
 		1FD369522A2F9B07005C67B7 /* ComicsLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD369512A2F9B07005C67B7 /* ComicsLogicController.swift */; };
-		1FD369542A2F9D0F005C67B7 /* networkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD369532A2F9D0F005C67B7 /* networkLayer.swift */; };
 		4F4F46642C2561640099B8A5 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F46632C2561640099B8A5 /* LoggerExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,7 +91,6 @@
 		1FD3694D2A2F97F5005C67B7 /* NetworkControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkControllerProtocol.swift; sourceTree = "<group>"; };
 		1FD3694F2A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsLogicControllerProtocol.swift; sourceTree = "<group>"; };
 		1FD369512A2F9B07005C67B7 /* ComicsLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsLogicController.swift; sourceTree = "<group>"; };
-		1FD369532A2F9D0F005C67B7 /* networkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkLayer.swift; sourceTree = "<group>"; };
 		4F4F46632C2561640099B8A5 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,7 +266,6 @@
 				1FD3694B2A2F865D005C67B7 /* EndPoint.swift */,
 				1FD3694D2A2F97F5005C67B7 /* NetworkControllerProtocol.swift */,
 				1FD3694F2A2F996B005C67B7 /* ComicsLogicControllerProtocol.swift */,
-				1FD369532A2F9D0F005C67B7 /* networkLayer.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -401,7 +398,6 @@
 				1F6FB2F62A1CD731005C2C08 /* MainCoordinator.swift in Sources */,
 				1F68D11F2A13B562009AE837 /* RegularButtons.swift in Sources */,
 				1FCE9A912A16559B00053975 /* ColorExtension.swift in Sources */,
-				1FD369542A2F9D0F005C67B7 /* networkLayer.swift in Sources */,
 				1F68D1282A13F48D009AE837 /* RegularTextFields.swift in Sources */,
 				1F93EEC62A225A960024388D /* Comics.swift in Sources */,
 				1F93EEC12A22577C0024388D /* MarvelComicsView.swift in Sources */,
